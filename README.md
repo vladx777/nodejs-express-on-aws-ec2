@@ -18,9 +18,9 @@ EC2 script on creation to install the CodeDeploy Agent:
 
 ```
 #!/bin/bash
-sudo apt-get -y update
-sudo apt-install ruby
-sudo apt-install wget
+sudo apt-get update
+sudo apt install ruby
+sudo apt install wget
 cd /home/ubuntu
 wget https://aws-codedeploy-us-east-1.s3.amazonaws.com/latest/install
 sudo chmod +x ./install
@@ -42,5 +42,5 @@ Location for CodeDeploy logs:
 Uninstall CodeDeploy Agent:
 
 ```
-sudo yum erase codedeploy-agent
+sudo apt erase codedeploy-agent
 ```
